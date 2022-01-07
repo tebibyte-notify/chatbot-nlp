@@ -1,0 +1,881 @@
+{
+  "settings": {
+    "languages": [
+      "id"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "id"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "halo": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "howdy": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "greetings": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "woy": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hola": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "helo": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hai": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hei": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "salam": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hy": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "woi": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "malam,selamat": {
+            "intent": "selamat.malam",
+            "domain": "default"
+          },
+          "malam,slmt": {
+            "intent": "selamat.malam",
+            "domain": "default"
+          },
+          "mlm,slmt": {
+            "intent": "selamat.malam",
+            "domain": "default"
+          },
+          "met,mlm": {
+            "intent": "selamat.malam",
+            "domain": "default"
+          },
+          "malam,met": {
+            "intent": "selamat.malam",
+            "domain": "default"
+          },
+          "pagi,selamat": {
+            "intent": "selamat.pagi",
+            "domain": "default"
+          },
+          "pagi,slmt": {
+            "intent": "selamat.pagi",
+            "domain": "default"
+          },
+          "pg,slmt": {
+            "intent": "selamat.pagi",
+            "domain": "default"
+          },
+          "met,pagi": {
+            "intent": "selamat.pagi",
+            "domain": "default"
+          },
+          "met,pg": {
+            "intent": "selamat.pagi",
+            "domain": "default"
+          },
+          "selamat,siang": {
+            "intent": "selamat.siang",
+            "domain": "default"
+          },
+          "siang,slmt": {
+            "intent": "selamat.siang",
+            "domain": "default"
+          },
+          "met,siang": {
+            "intent": "selamat.siang",
+            "domain": "default"
+          },
+          "selamat,sore": {
+            "intent": "selamat.sore",
+            "domain": "default"
+          },
+          "slmt,sore": {
+            "intent": "selamat.sore",
+            "domain": "default"
+          },
+          "met,sore": {
+            "intent": "selamat.sore",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "salam": "default",
+          "selamat.malam": "default",
+          "selamat.pagi": "default",
+          "selamat.siang": "default",
+          "selamat.sore": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "halo",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "woy",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hola",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "helo",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hai",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hei",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "salam",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hy",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "woi",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat malam",
+            "intent": "selamat.malam"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt malam",
+            "intent": "selamat.malam"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt mlm",
+            "intent": "selamat.malam"
+          },
+          {
+            "domain": "default",
+            "utterance": "met mlm",
+            "intent": "selamat.malam"
+          },
+          {
+            "domain": "default",
+            "utterance": "met malam",
+            "intent": "selamat.malam"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat pagi",
+            "intent": "selamat.pagi"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt pagi",
+            "intent": "selamat.pagi"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt pg",
+            "intent": "selamat.pagi"
+          },
+          {
+            "domain": "default",
+            "utterance": "met pagi",
+            "intent": "selamat.pagi"
+          },
+          {
+            "domain": "default",
+            "utterance": "met pg",
+            "intent": "selamat.pagi"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat siang",
+            "intent": "selamat.siang"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt siang",
+            "intent": "selamat.siang"
+          },
+          {
+            "domain": "default",
+            "utterance": "met siang",
+            "intent": "selamat.siang"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat sore",
+            "intent": "selamat.sore"
+          },
+          {
+            "domain": "default",
+            "utterance": "slmt sore",
+            "intent": "selamat.sore"
+          },
+          {
+            "domain": "default",
+            "utterance": "met sore",
+            "intent": "selamat.sore"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "halo": 1,
+              "hello": 1,
+              "howdy": 1,
+              "hey": 1,
+              "greetings": 1,
+              "woy": 1,
+              "hola": 1,
+              "helo": 1,
+              "hai": 1,
+              "hei": 1,
+              "salam": 1,
+              "hy": 1,
+              "hi": 1,
+              "woi": 1,
+              "selamat": 1,
+              "malam": 1,
+              "slmt": 1,
+              "mlm": 1,
+              "met": 1,
+              "pagi": 1,
+              "pg": 1,
+              "siang": 1,
+              "sore": 1
+            },
+            "intents": {
+              "salam": 1,
+              "selamat.malam": 1,
+              "selamat.pagi": 1,
+              "selamat.siang": 1,
+              "selamat.sore": 1
+            },
+            "intentFeatures": {
+              "salam": {
+                "halo": 1,
+                "hello": 1,
+                "howdy": 1,
+                "hey": 1,
+                "greetings": 1,
+                "woy": 1,
+                "hola": 1,
+                "helo": 1,
+                "hai": 1,
+                "hei": 1,
+                "salam": 1,
+                "hy": 1,
+                "hi": 1,
+                "woi": 1
+              },
+              "selamat.malam": {
+                "selamat": 1,
+                "malam": 1,
+                "slmt": 1,
+                "mlm": 1,
+                "met": 1
+              },
+              "selamat.pagi": {
+                "selamat": 1,
+                "pagi": 1,
+                "slmt": 1,
+                "pg": 1,
+                "met": 1
+              },
+              "selamat.siang": {
+                "selamat": 1,
+                "siang": 1,
+                "slmt": 1,
+                "met": 1
+              },
+              "selamat.sore": {
+                "selamat": 1,
+                "sore": 1,
+                "slmt": 1,
+                "met": 1
+              }
+            },
+            "featuresToIntent": {
+              "halo": [
+                "salam"
+              ],
+              "hello": [
+                "salam"
+              ],
+              "howdy": [
+                "salam"
+              ],
+              "hey": [
+                "salam"
+              ],
+              "greetings": [
+                "salam"
+              ],
+              "woy": [
+                "salam"
+              ],
+              "hola": [
+                "salam"
+              ],
+              "helo": [
+                "salam"
+              ],
+              "hai": [
+                "salam"
+              ],
+              "hei": [
+                "salam"
+              ],
+              "salam": [
+                "salam"
+              ],
+              "hy": [
+                "salam"
+              ],
+              "hi": [
+                "salam"
+              ],
+              "woi": [
+                "salam"
+              ],
+              "selamat": [
+                "selamat.malam",
+                "selamat.pagi",
+                "selamat.siang",
+                "selamat.sore"
+              ],
+              "malam": [
+                "selamat.malam"
+              ],
+              "slmt": [
+                "selamat.malam",
+                "selamat.pagi",
+                "selamat.siang",
+                "selamat.sore"
+              ],
+              "mlm": [
+                "selamat.malam"
+              ],
+              "met": [
+                "selamat.malam",
+                "selamat.pagi",
+                "selamat.siang",
+                "selamat.sore"
+              ],
+              "pagi": [
+                "selamat.pagi"
+              ],
+              "pg": [
+                "selamat.pagi"
+              ],
+              "siang": [
+                "selamat.siang"
+              ],
+              "sore": [
+                "selamat.sore"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "halo",
+                "hello",
+                "howdy",
+                "hey",
+                "greetings",
+                "woy",
+                "hola",
+                "helo",
+                "hai",
+                "hei",
+                "salam",
+                "hy",
+                "hi",
+                "woi",
+                "selamat",
+                "malam",
+                "slmt",
+                "mlm",
+                "met",
+                "pagi",
+                "pg",
+                "siang",
+                "sore"
+              ],
+              "intents": [
+                "salam",
+                "selamat.malam",
+                "selamat.pagi",
+                "selamat.siang",
+                "selamat.sore"
+              ],
+              "perceptrons": [
+                [
+                  3.2101640701293945,
+                  3.4159421920776367,
+                  3.3817226886749268,
+                  3.3465006351470947,
+                  3.3103582859039307,
+                  3.2733733654022217,
+                  3.2356207370758057,
+                  3.1971724033355713,
+                  3.1580967903137207,
+                  3.1184606552124023,
+                  3.0783252716064453,
+                  3.0377519130706787,
+                  2.996797561645508,
+                  2.955517292022705,
+                  -7.420307159423828,
+                  -4.202291011810303,
+                  -7.580197334289551,
+                  -3.637927293777466,
+                  -7.540292263031006,
+                  -3.872515916824341,
+                  -3.516547203063965,
+                  -3.6739957332611084,
+                  -3.6059305667877197,
+                  11.097486798367639
+                ],
+                [
+                  -0.5628197193145752,
+                  -0.5537200570106506,
+                  -0.5452642440795898,
+                  -0.5375431776046753,
+                  -0.5292198061943054,
+                  -0.5208784341812134,
+                  -0.5125278234481812,
+                  -0.504176676273346,
+                  -0.49583280086517334,
+                  -0.48750370740890503,
+                  -0.47919654846191406,
+                  -0.47091785073280334,
+                  -0.46267393231391907,
+                  -0.4544706344604492,
+                  2.561056613922119,
+                  11.004501342773438,
+                  2.8428235054016113,
+                  10.651453018188477,
+                  2.8284294605255127,
+                  -3.3875210285186768,
+                  -3.369004011154175,
+                  -3.352058172225952,
+                  -3.3114960193634033,
+                  0.5363722199088463
+                ],
+                [
+                  -0.5863369107246399,
+                  -0.5716628432273865,
+                  -0.5612854361534119,
+                  -0.5507861375808716,
+                  -0.5389671921730042,
+                  -0.5313856601715088,
+                  -0.5229083299636841,
+                  -0.5160373449325562,
+                  -0.5086287260055542,
+                  -0.5011736750602722,
+                  -0.49368152022361755,
+                  -0.48616132140159607,
+                  -0.4786216616630554,
+                  -0.47107046842575073,
+                  2.6191227436065674,
+                  -3.2569260597229004,
+                  2.8658013343811035,
+                  -3.2339859008789062,
+                  2.8658077716827393,
+                  11.015412330627441,
+                  10.640459060668945,
+                  -3.3903374671936035,
+                  -3.383653402328491,
+                  0.5137067847932154
+                ],
+                [
+                  -0.3317408263683319,
+                  -0.3207961916923523,
+                  -0.31019702553749084,
+                  -0.3085346519947052,
+                  -0.29902684688568115,
+                  -0.2897902727127075,
+                  -0.28081822395324707,
+                  -0.27724573016166687,
+                  -0.2692645490169525,
+                  -0.261486679315567,
+                  -0.2539082467556,
+                  -0.2500600814819336,
+                  -0.24332652986049652,
+                  -0.23674434423446655,
+                  1.5529035329818726,
+                  -1.7126929759979248,
+                  1.410066843032837,
+                  -1.5423216819763184,
+                  1.4125566482543945,
+                  -1.6546380519866943,
+                  -1.4978282451629639,
+                  12.606725692749023,
+                  -1.8005785942077637,
+                  0.16368866270804344
+                ],
+                [
+                  -0.3495035171508789,
+                  -0.33729586005210876,
+                  -0.3255041539669037,
+                  -0.3264318108558655,
+                  -0.31575554609298706,
+                  -0.3054119050502777,
+                  -0.29539138078689575,
+                  -0.2856845557689667,
+                  -0.2762823700904846,
+                  -0.26717597246170044,
+                  -0.26553067564964294,
+                  -0.2573707699775696,
+                  -0.24944251775741577,
+                  -0.24174028635025024,
+                  1.5700064897537231,
+                  -1.710554599761963,
+                  1.473617672920227,
+                  -1.5586144924163818,
+                  1.4747827053070068,
+                  -1.668752908706665,
+                  -1.5260857343673706,
+                  -1.6055572032928467,
+                  12.610302925109863,
+                  0.11403983599001148
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "id",
+        "halo"
+      ],
+      [
+        "id",
+        "hello"
+      ],
+      [
+        "id",
+        "howdy"
+      ],
+      [
+        "id",
+        "hey"
+      ],
+      [
+        "id",
+        "Greetings"
+      ],
+      [
+        "id",
+        "woy"
+      ],
+      [
+        "id",
+        "hola"
+      ],
+      [
+        "id",
+        "helo"
+      ],
+      [
+        "id",
+        "hai"
+      ],
+      [
+        "id",
+        "hei"
+      ],
+      [
+        "id",
+        "salam"
+      ],
+      [
+        "id",
+        "hy"
+      ],
+      [
+        "id",
+        "hi"
+      ],
+      [
+        "id",
+        "woi"
+      ],
+      [
+        "id",
+        "selamat malam"
+      ],
+      [
+        "id",
+        "slmt malam"
+      ],
+      [
+        "id",
+        "slmt mlm"
+      ],
+      [
+        "id",
+        "met mlm"
+      ],
+      [
+        "id",
+        "met malam"
+      ],
+      [
+        "id",
+        "selamat pagi"
+      ],
+      [
+        "id",
+        "slmt pagi"
+      ],
+      [
+        "id",
+        "slmt pg"
+      ],
+      [
+        "id",
+        "met pagi"
+      ],
+      [
+        "id",
+        "met pg"
+      ],
+      [
+        "id",
+        "selamat siang"
+      ],
+      [
+        "id",
+        "slmt siang"
+      ],
+      [
+        "id",
+        "met siang"
+      ],
+      [
+        "id",
+        "selamat sore"
+      ],
+      [
+        "id",
+        "slmt sore"
+      ],
+      [
+        "id",
+        "met sore"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "id": {
+        "salam": [
+          {
+            "answer": "Halo kak!"
+          },
+          {
+            "answer": "Hello!"
+          },
+          {
+            "answer": "Hai kak!"
+          }
+        ],
+        "selamat.malam": [
+          {
+            "answer": "Selamat malam juga kak"
+          },
+          {
+            "answer": "Selamat malamm"
+          },
+          {
+            "answer": "Selamat malam juga kawankuu"
+          },
+          {
+            "answer": "Selamat malam jugaa sahabatkuuu"
+          }
+        ],
+        "selamat.pagi": [
+          {
+            "answer": "Selamat pagi juga kak"
+          },
+          {
+            "answer": "Selamat pagiii"
+          },
+          {
+            "answer": "Selamat pagi kawankuu"
+          },
+          {
+            "answer": "Selamat pagi jugaa sahabatkuuu"
+          }
+        ],
+        "selamat.siang": [
+          {
+            "answer": "Selamat siang juga kak"
+          },
+          {
+            "answer": "Selamat siangg"
+          },
+          {
+            "answer": "Selamat siang juga kawankuu"
+          },
+          {
+            "answer": "Selamat siang jugaa sahabatkuuu"
+          }
+        ],
+        "selamat.sore": [
+          {
+            "answer": "Selamat sore juga kak"
+          },
+          {
+            "answer": "Selamat soreee"
+          },
+          {
+            "answer": "Selamat sore juga kawankuu"
+          },
+          {
+            "answer": "Selamat sore jugaa sahabatkuuu"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
